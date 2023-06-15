@@ -60,7 +60,7 @@ const Home = () => {
                         <div>
                             <button className='home__header__right__btns'>
                                 <MdOutlineNotificationsNone />
-                                <div>
+                                <div style={{ width: '14px' }}>
 
                                 </div>
 
@@ -68,14 +68,14 @@ const Home = () => {
                             <button className={width < 1000 ? 'hidden' : 'home__header__right__btns'}>
                                 <BiCommentDetail />
 
-                                <div>
+                                <div style={{ width: '14px' }}>
 
                                 </div>
 
                             </button>
                             <button className={width < 1000 ? 'hidden' : 'home__header__right__btns'}>
-                                <CiGift style={{color : 'gray'}}/>
-                                <div style={{backgroundColor : 'gray'}}>
+                                <CiGift style={{ color: 'gray' }} />
+                                <div style={{ backgroundColor: 'gray', width: '14px' }}>
 
                                 </div>
 
@@ -95,7 +95,7 @@ const Home = () => {
 
             </header>
             <strong>
-                Dashboard/
+                Dashboard /
             </strong>
 
             <div className='home__graphics'>
@@ -118,9 +118,9 @@ const Home = () => {
                     <figure className={width < 1000 ? 'hidden' : ''}>
                         <img src={barChart} alt="chart" />
                     </figure>
-                    <h3>
+                    <small>
                         Event Galleries
-                    </h3>
+                    </small>
 
                     <Swiper
                         spaceBetween={50}
