@@ -4,12 +4,14 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    color: white;
 
     &__header {
         width: 100%;
         height: 90px;
         display: flex;
         justify-content: space-between;
+
 
         &__left {
             width: 50%;
@@ -82,7 +84,7 @@
                     opacity: .6;
                     transition: opacity scale .3s;
                 }
-             
+
 
                 & div {
                     height: 20px;
@@ -92,7 +94,7 @@
                     right: -5px;
                     border-radius: 50%;
 
-                 
+
                 }
 
 
@@ -121,6 +123,7 @@
 
             .settings {
                 background-color: #13B497;
+                color: white;
 
             }
 
@@ -180,6 +183,7 @@
             display: flex;
             flex-direction: column;
             border-radius: 10px;
+            height: 100%;
 
             &__top {
                 width: 100%;
@@ -212,7 +216,8 @@
             width: 50%;
             display: flex;
             flex-direction: column;
-            padding: 15px;
+            padding: 12px;
+            height: 100%;
 
 
             & figure {
@@ -227,6 +232,8 @@
 
             & h3 {
                 padding-left: 20px;
+                color: white;
+
 
             }
 
@@ -236,7 +243,7 @@
 
                 & img {
                     width: 100%;
-                    height: 430px;
+                    height: 415px;
                     object-fit: cover;
                     border-radius: 8px;
 
