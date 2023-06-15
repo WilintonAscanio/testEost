@@ -78,6 +78,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 20px;
+            
 
             &__btns {
                 height: 40px;
@@ -122,6 +123,7 @@
                 display: flex;
                 justify-content: space-between;
                 color: white;
+                
 
 
                 & div {
@@ -129,6 +131,7 @@
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
+                    gap: 10px;
 
                 }
 
