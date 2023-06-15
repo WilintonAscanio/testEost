@@ -27,8 +27,8 @@ const Home = () => {
 
     const changeScreen = () => {
         setWidth(window.innerWidth)
-      }
-      window.addEventListener('resize', changeScreen)
+    }
+    window.addEventListener('resize', changeScreen)
 
     useEffect(() => {
         getData().then((response) => {
@@ -46,7 +46,7 @@ const Home = () => {
                 <div className='home__header__left'>
                     <figure>
                         <img src={hamburguer} alt="hamburguer" />
-                        <img src={logo} alt="logo" />
+                        <img src={logo} alt="logo" className='logo' />
                     </figure>
                     <section>
                         <input type="text" placeholder='Search here' />
@@ -55,18 +55,37 @@ const Home = () => {
                     </section>
                 </div>
                 <div className='home__header__right'>
-                    <FiSettings className={width <1000 ? 'hidden' : 'home__header__right__btns settings'}  />
+                    <FiSettings className={width < 1000 ? 'hidden' : 'home__header__right__btns settings'} />
                     <section>
                         <div>
-                            <MdOutlineNotificationsNone className='home__header__right__btns' />
-                            <BiCommentDetail className={width <1000 ? 'hidden' : 'home__header__right__btns'}  />
-                            <CiGift className={width <1000 ? 'hidden' : 'home__header__right__btns'}  />
+                            <button className='home__header__right__btns'>
+                                <MdOutlineNotificationsNone />
+                                <div>
+
+                                </div>
+
+                            </button>
+                            <button className={width < 1000 ? 'hidden' : 'home__header__right__btns'}>
+                                <BiCommentDetail />
+
+                                <div>
+
+                                </div>
+
+                            </button>
+                            <button className={width < 1000 ? 'hidden' : 'home__header__right__btns'}>
+                                <CiGift style={{color : 'gray'}}/>
+                                <div style={{backgroundColor : 'gray'}}>
+
+                                </div>
+
+                            </button>
 
                         </div>
                         <div className='home__header__right__user'>
                             <FaUserAlt className='userPhoto' />
                             <select>
-                                <option value="" className={width <1000 ? 'hidden' : ''} >David</option >
+                                <option value="" className={width < 1000 ? 'hidden' : ''} >David</option >
                             </select>
                         </div>
 
@@ -90,13 +109,13 @@ const Home = () => {
                         <img src={waveChart} alt="waveChart" />
                         <img src={waveLineChart} alt="waveLineChart" />
                         <img src={pieChart} alt="pieChart" />
-                        
+
                     </figure>
-                    
+
 
                 </section>
                 <section className='home__graphics__right'>
-                    <figure className={width <1000 ? 'hidden' : ''}>
+                    <figure className={width < 1000 ? 'hidden' : ''}>
                         <img src={barChart} alt="chart" />
                     </figure>
                     <h3>
