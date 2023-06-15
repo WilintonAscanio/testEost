@@ -12,11 +12,11 @@ import barChart from '../assets/barChart.svg'
 import { getData } from '../services/getData'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import bestSelling from '../assets/bestSelling.svg'
-
 import progressBar from '../assets/progressBar.svg'
 import waveChart from '../assets/waveChart.svg'
 import pieChart from '../assets/pieChart.svg'
 import waveLineChart from '../assets/waveLineChart.svg'
+import { AiOutlineDown } from 'react-icons/ai'
 
 
 
@@ -82,12 +82,12 @@ const Home = () => {
                             </button>
 
                         </div>
-                        <div className='home__header__right__user'>
+                        <figure className='home__header__right__user'>
                             <FaUserAlt className='userPhoto' />
-                            <select>
-                                <option value="" className={width < 1000 ? 'hidden' : ''} >David</option >
-                            </select>
-                        </div>
+                            <small className={width < 1000 ? 'hidden' : ''}>David</small>
+                            <AiOutlineDown />
+
+                        </figure>
 
                     </section>
 
